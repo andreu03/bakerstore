@@ -6,19 +6,24 @@ body {
     text-align: center;
 }
 ul {
-    display: flex;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
+    text-align: center;
 }
 li {
-    margin: 20px 100px 20px 165px;
+    display: inline;
+    margin-right: 100px;
+}
+li:last-child
+{
+    margin-right: 0%;
 }
 .photo {
-    background-image: url(./img/01-Картинка-фона.jpg);
-    width: 1505px;
-    height: 900px;
+    background: url(./img/01-Картинка-фона.jpg) center/cover no-repeat;
+    height: 600px;
+    position: relative;
 }
 .photoText {
     text-align: center;
@@ -26,29 +31,39 @@ li {
     height: 190px;
     font-size: 12px;
     background-color: rgb(255, 226, 176, 0.5);
-    border: 1px black solid;
-    bottom: 0px;
+    /* border: 1px black solid; */
+    top: 349px;
+    left: 730px;
     position: absolute;
-    margin-top: 349px;
-    margin-left: 730px;
+    /* margin-top: 349px; */
+
+}
+.about {
+    height: 160px;
+    width: 390px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 .photoH2 {
-    font-size: 36px;
+    font-size: 32px;
+    margin: 0;
 }
 .icons {
     display: flex;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-align: center;
 }
 .icon {
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 170px;
     text-align: center;
 }
 .tag {
     font-size: 96px;
     font-family: sans-serif;
     text-align: center;
+    
 }
 b {
     color: red;
@@ -67,3 +82,6 @@ b {
 .maps {
     text-align: center;
 }
+li:hover {
+    color: red;
+} 
